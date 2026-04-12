@@ -121,6 +121,50 @@ export function ProductStack() {
           </AnimatePresence>
         </div>
       </div>
+
+      {/* All-products reveal grid */}
+      <div className="product-stack__all-heading">
+        <motion.p
+          className="eyebrow"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.5 }}
+        >
+          All products
+        </motion.p>
+      </div>
+      <motion.div
+        className="product-stack__all-grid"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.07 } } }}
+      >
+        {products.map((product) => (
+          <motion.article
+            key={product.slug}
+            className={`home-product-card home-product-card--${product.tone} product-stack__all-card`}
+            variants={{
+              hidden: { opacity: 0, y: 32, scale: 0.97 },
+              visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.55, ease: cinematicEase } },
+            }}
+          >
+            <div className="home-product-card__top">
+              <p>{product.productType}</p>
+              <span>{product.status}</span>
+            </div>
+            <h3>{product.name}</h3>
+            <p className="home-product-card__tagline">{product.tagline}</p>
+            <div className="home-product-card__footer">
+              <span>{product.pricing.label}</span>
+              <Link href={product.ctaHref ?? `/product/${product.slug}`} className="text-link">
+                {product.ctaHref ? "Open live product" : "Open concept"}
+              </Link>
+            </div>
+          </motion.article>
+        ))}
+      </motion.div>
     </section>
   );
 }

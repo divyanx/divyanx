@@ -5060,6 +5060,33 @@ body {
   gap: 6px;
 }
 
+.product-stack__all-heading {
+  margin-top: 4rem;
+  margin-bottom: 1.25rem;
+}
+
+.product-stack__all-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.product-stack__all-card {
+  min-height: auto;
+}
+
+@media (max-width: 860px) {
+  .product-stack__all-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .product-stack__all-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .product-stack__live-dot {
   width: 7px;
   height: 7px;
