@@ -5007,6 +5007,10 @@ body {
 .product-stack__card {
   width: 100%;
   max-width: 640px;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
 }
 
 .product-stack__progress {

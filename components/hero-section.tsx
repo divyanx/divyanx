@@ -33,11 +33,10 @@ function SplitHeadline({ text }: { text: string }) {
       initial="hidden"
       animate="visible"
       transition={{ staggerChildren: 0.08, delayChildren: 0.5 }}
-      style={{ display: "flex", flexWrap: "wrap", gap: "0.25em" }}
     >
       {words.map((word, i) => (
         <motion.span key={i} variants={wordReveal} style={{ display: "inline-block" }}>
-          {word}
+          {word}{i < words.length - 1 ? " " : ""}
         </motion.span>
       ))}
     </motion.h1>
