@@ -72,9 +72,10 @@ export function HeroSection() {
   return (
     <motion.section
       ref={heroRef}
-      className="section-shell home-stage"
+      className="home-stage-wrap"
       style={{ backgroundColor }}
     >
+      <div className="section-shell home-stage">
       <motion.div className="home-stage__grid" style={{ color: textColor }}>
         <div className="home-stage__copy">
           <motion.p
@@ -195,6 +196,7 @@ export function HeroSection() {
           </motion.article>
         ))}
       </motion.div>
+      </div>
     </motion.section>
   );
 }

@@ -3791,6 +3791,11 @@ body {
 }
 
 /* Home rebuild */
+.home-stage-wrap {
+  width: 100%;
+  padding-bottom: 2rem;
+}
+
 .home-stage {
   display: grid;
   gap: 1.25rem;
