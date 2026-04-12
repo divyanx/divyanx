@@ -35,8 +35,12 @@ function SplitHeadline({ text }: { text: string }) {
       transition={{ staggerChildren: 0.08, delayChildren: 0.5 }}
     >
       {words.map((word, i) => (
-        <motion.span key={i} variants={wordReveal} style={{ display: "inline-block" }}>
-          {word}{i < words.length - 1 ? " " : ""}
+        <motion.span
+          key={i}
+          variants={wordReveal}
+          style={{ display: "inline-block", marginRight: i < words.length - 1 ? "0.22em" : 0 }}
+        >
+          {word}
         </motion.span>
       ))}
     </motion.h1>
@@ -89,6 +93,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: cinematicEase, delay: 1.1 }}
+            style={{ color: "inherit" }}
           >
             I&apos;m {siteConfig.name}, building under {siteConfig.studioName}: product systems,
             AI-native workflows, and visual experiences that make intelligence feel tangible.
@@ -99,6 +104,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: cinematicEase, delay: 1.25 }}
+            style={{ color: "inherit" }}
           >
             The work gets interesting where model behavior, interaction design, and frontend
             craft stop acting like separate departments and start behaving like one system.
