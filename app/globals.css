@@ -3860,7 +3860,6 @@ body {
   overflow: hidden;
   border-radius: 28px;
   opacity: 0.94;
-  transform: translateY(calc(var(--hero-progress, 0) * 12px));
 }
 
 .home-stage__portrait-wrap::after {
@@ -3924,8 +3923,6 @@ body {
   inset: auto auto 20% 8%;
   width: 12rem;
   height: 12rem;
-  transform: scale(calc(1 + (var(--hero-progress, 0) * 0.08)));
-  opacity: calc(1 - (var(--hero-progress, 0) * 0.25));
 }
 
 .home-stage__rings span {
