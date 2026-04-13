@@ -1760,6 +1760,10 @@ ol {
     width: min(100vw - 1.5rem, 1120px);
   }
 
+  .site-header__inner {
+    grid-template-columns: 1fr auto;
+  }
+
   .site-nav {
     display: none;
   }
