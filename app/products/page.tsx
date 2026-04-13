@@ -16,8 +16,7 @@ export default function ProductsPage() {
       <PageHero
         eyebrow="Products"
         title="A growing set of products built with a personal point of view."
-        intro="The studio is designed to support multiple products without losing its human voice. Each product lives under the same umbrella, but solves a distinct problem."
-        detail="These entries use realistic placeholder content for now, so the structure is ready before final product details are dropped in."
+        intro="Each product lives under the same umbrella but solves a distinct problem. Some are live, others are taking shape — all built with the same care."
       />
 
       <section className="section-shell content-section">

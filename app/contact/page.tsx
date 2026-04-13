@@ -16,8 +16,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="A simple way to reach out."
-        intro="Use the prototype-ready contact form below, or write directly by email. The form is visually complete and ready for real wiring in a later pass."
-        detail="Optional social links can be added later without changing the layout."
+        intro="Have a project in mind, a product question, or just want to say hello? Drop a message below or write directly by email."
       />
 
       <section className="section-shell content-section contact-layout">

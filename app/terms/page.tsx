@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
   title: "Terms of Service | Divyanx",
-  description: "Structured placeholder terms for Divyanx and future products.",
+  description: "Terms of service for Divyanx and its products.",
   path: "/terms",
 });
 
@@ -14,7 +14,7 @@ export default function TermsPage() {
     <LegalPage
       eyebrow="Legal"
       title="Terms of Service"
-      intro="These terms are written as a calm, editable starting point for the Divyanx studio and the products that will sit under it."
+      intro="The terms that govern use of the Divyanx website and its products."
       sections={termsSections}
     />
   );

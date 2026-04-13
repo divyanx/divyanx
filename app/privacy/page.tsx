@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
   title: "Privacy Policy | Divyanx",
-  description: "Placeholder privacy policy for Divyanx and future products.",
+  description: "Privacy policy for Divyanx and its products.",
   path: "/privacy",
 });
 
@@ -14,7 +14,7 @@ export default function PrivacyPage() {
     <LegalPage
       eyebrow="Legal"
       title="Privacy Policy"
-      intro="A simple, structured privacy framework for the studio and its future products. This content is intentionally editable and should be reviewed before live commerce or accounts are introduced."
+      intro="How Divyanx handles your data — kept simple and transparent."
       sections={privacySections}
     />
   );

@@ -46,10 +46,10 @@ export function ContactForm() {
 
   const helperText = useMemo(() => {
     if (status === "submitted") {
-      return "Prototype mode: the form UI is ready, and submission wiring can be connected later.";
+      return "Thanks for reaching out — I'll get back to you soon.";
     }
 
-    return `For now, this form is a polished placeholder. You can also write directly to ${siteConfig.email}.`;
+    return `You can also write directly to ${siteConfig.email}.`;
   }, [status]);
 
   function updateField<K extends keyof FormValues>(field: K, value: FormValues[K]) {

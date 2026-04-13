@@ -5,7 +5,7 @@ import { createMetadata } from "@/lib/metadata";
 
 export const metadata: Metadata = createMetadata({
   title: "Refund Policy | Divyanx",
-  description: "Structured placeholder refund policy for future Divyanx product payments.",
+  description: "Refund policy for Divyanx products and services.",
   path: "/refund-policy",
 });
 
@@ -14,7 +14,7 @@ export default function RefundPolicyPage() {
     <LegalPage
       eyebrow="Legal"
       title="Refund Policy"
-      intro="A structured placeholder for future paid products and payment compliance. Review and customize before enabling live Stripe or Razorpay flows."
+      intro="Our approach to refunds for current and future paid products."
       sections={refundSections}
     />
   );
